@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="447.685" height="87.919" viewBox="0 0 447.685 87.919">
+  <g id="logo" transform="translate(-17 -32)">
+    <text id="JYM" transform="translate(18 101.919)" fill="silver" font-size="70" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">JYM</tspan></text>
+    <text id="RESTRR" transform="translate(165.126 101.919)" fill="#c69214" font-size="70" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">RESTRR</tspan></text>
+    <line id="Line_1" data-name="Line 1" x2="101.159" transform="translate(362.025 111.434)" fill="none" stroke="#c69214" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_2" data-name="Line 2" x2="335.993" transform="translate(127.191 33.5)" fill="none" stroke="#c69214" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,12 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<div class="logo">
+  <img src="../../assets/logo.svg" alt="Logo">
+</div>
+<ion-item  color="dark">
+  <ion-label>Rest Duration</ion-label>
+  <ion-datetime display-format="mm:ss" placeholder="Tap Here" [(ngModel)]="fullTime"></ion-datetime>
+</ion-item>
+      <circle-progress (click)="startTime()"
+      [percent]="percent"
+      [maxPercent]="100"
+      [radius]="radius"
+      [showTitle]="false"
+      [showUnits]="false"      
+      [outerStrokeWidth]="16"
+      [outerStrokeColor]="'#C69214'"
+      [showZeroOuterStroke]="false"
+      [backgroundStroke]="'#34495E'"
+      [backgroundStrokeWidth]="3" 
+      [showInnerStroke]="false"     
+       
+    ></circle-progress>
+
+    <p>{{ elapsed.h }}:{{ elapsed.m }}:{{ elapsed.s }}</p>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ng-container *ngIf="!timer; else running">
+          <ion-fab-button (click)="startTime()">
+              <ion-icon name="play"></ion-icon>
+          </ion-fab-button>
+      </ng-container>
+      <ng-template #running>
+          <ion-fab-button (click)="stopTime()">
+              <ion-icon name="square"></ion-icon>
+            </ion-fab-button>
+      </ng-template>
+    </ion-fab>
+
 </ion-content>
